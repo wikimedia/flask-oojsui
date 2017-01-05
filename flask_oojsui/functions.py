@@ -13,8 +13,18 @@ def build_static_blueprint(*args, **kwargs):
         return send_from_directory(
             os.path.join(DIRECTORY, "static", "oojs-ui"), fn)
 
+    @bp.route('/oojs-ui-static/dist/<path:fn>')
+    def oojsui_static_dist(fn):
+        return send_from_directory(
+            os.path.join(DIRECTORY, "static", "oojs-ui"), fn)
+
     @bp.route('/oojs-static/<path:fn>')
     def oojs_static(fn):
+        return send_from_directory(
+            os.path.join(DIRECTORY, "static", "oojs"), fn)
+
+    @bp.route('/oojs-static/dist/<path:fn>')
+    def oojs_static_dist(fn):
         return send_from_directory(
             os.path.join(DIRECTORY, "static", "oojs"), fn)
 
