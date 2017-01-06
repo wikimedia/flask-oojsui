@@ -15,7 +15,7 @@ setup(
     author_email='aaron.halfaker@gmail.com',
     packages=find_packages(),
     scripts=[],
-    url='http://pypi.python.org/pypi/flask-wikimediaui',
+    url='https://pypi.python.org/pypi/flask-oojsui/',
     license=open('LICENSE').read(),
     description='This library provides python Flask utilities and static ' +
                 'assets for rendering Wikimedia UI elements',
