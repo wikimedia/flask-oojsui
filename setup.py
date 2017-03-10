@@ -10,7 +10,7 @@ def requirements(fname):
 
 setup(
     name='flask-oojsui',
-    version="0.0.2",
+    version="0.0.3",
     author='Aaron Halfaker',
     author_email='aaron.halfaker@gmail.com',
     packages=find_packages(),
