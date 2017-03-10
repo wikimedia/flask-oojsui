@@ -5,6 +5,9 @@ __pycache__/
 # Temporary text editor files
 *~
 
+# Node stuff
+node_modules
+
 # C extensions
 *.so
 

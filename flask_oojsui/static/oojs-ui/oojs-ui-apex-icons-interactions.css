@@ -1,13 +1,25 @@
 /*!
- * OOjs UI v0.18.0
+ * OOjs UI v0.19.5
  * https://www.mediawiki.org/wiki/OOjs_UI
  *
- * Copyright 2011–2016 OOjs UI Team and other contributors.
+ * Copyright 2011–2017 OOjs UI Team and other contributors.
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2016-11-22T10:18:07Z
+ * Date: 2017-03-07T22:57:06Z
  */
+.oo-ui-icon-add {
+  background-image: url('themes/apex/images/icons/add.png');
+  background-image: -webkit-linear-gradient(transparent, transparent), /* @embed */ url('themes/apex/images/icons/add.svg');
+  background-image:         linear-gradient(transparent, transparent), /* @embed */ url('themes/apex/images/icons/add.svg');
+  background-image:      -o-linear-gradient(transparent, transparent), url('themes/apex/images/icons/add.png');
+}
+.oo-ui-icon-add-invert {
+  background-image: url('themes/apex/images/icons/add-invert.png');
+  background-image: -webkit-linear-gradient(transparent, transparent), /* @embed */ url('themes/apex/images/icons/add-invert.svg');
+  background-image:         linear-gradient(transparent, transparent), /* @embed */ url('themes/apex/images/icons/add-invert.svg');
+  background-image:      -o-linear-gradient(transparent, transparent), url('themes/apex/images/icons/add-invert.png');
+}
 .oo-ui-icon-beta {
   background-image: url('themes/apex/images/icons/beta.png');
   background-image: -webkit-linear-gradient(transparent, transparent), /* @embed */ url('themes/apex/images/icons/beta.svg');
@@ -21,16 +33,16 @@
   background-image:      -o-linear-gradient(transparent, transparent), url('themes/apex/images/icons/beta-invert.png');
 }
 .oo-ui-icon-betaLaunch {
-  background-image: url('themes/apex/images/icons/betaLaunch.png');
-  background-image: -webkit-linear-gradient(transparent, transparent), /* @embed */ url('themes/apex/images/icons/betaLaunch.svg');
-  background-image:         linear-gradient(transparent, transparent), /* @embed */ url('themes/apex/images/icons/betaLaunch.svg');
-  background-image:      -o-linear-gradient(transparent, transparent), url('themes/apex/images/icons/betaLaunch.png');
+  background-image: url('themes/apex/images/icons/logo-wikimediaDiscovery.png');
+  background-image: -webkit-linear-gradient(transparent, transparent), /* @embed */ url('themes/apex/images/icons/logo-wikimediaDiscovery.svg');
+  background-image:         linear-gradient(transparent, transparent), /* @embed */ url('themes/apex/images/icons/logo-wikimediaDiscovery.svg');
+  background-image:      -o-linear-gradient(transparent, transparent), url('themes/apex/images/icons/logo-wikimediaDiscovery.png');
 }
 .oo-ui-icon-betaLaunch-invert {
-  background-image: url('themes/apex/images/icons/betaLaunch-invert.png');
-  background-image: -webkit-linear-gradient(transparent, transparent), /* @embed */ url('themes/apex/images/icons/betaLaunch-invert.svg');
-  background-image:         linear-gradient(transparent, transparent), /* @embed */ url('themes/apex/images/icons/betaLaunch-invert.svg');
-  background-image:      -o-linear-gradient(transparent, transparent), url('themes/apex/images/icons/betaLaunch-invert.png');
+  background-image: url('themes/apex/images/icons/logo-wikimediaDiscovery-invert.png');
+  background-image: -webkit-linear-gradient(transparent, transparent), /* @embed */ url('themes/apex/images/icons/logo-wikimediaDiscovery-invert.svg');
+  background-image:         linear-gradient(transparent, transparent), /* @embed */ url('themes/apex/images/icons/logo-wikimediaDiscovery-invert.svg');
+  background-image:      -o-linear-gradient(transparent, transparent), url('themes/apex/images/icons/logo-wikimediaDiscovery-invert.png');
 }
 .oo-ui-icon-bookmark {
   background-image: url('themes/apex/images/icons/bookmark-ltr.png');
@@ -79,6 +91,18 @@
   background-image: -webkit-linear-gradient(transparent, transparent), /* @embed */ url('themes/apex/images/icons/clock-invert.svg');
   background-image:         linear-gradient(transparent, transparent), /* @embed */ url('themes/apex/images/icons/clock-invert.svg');
   background-image:      -o-linear-gradient(transparent, transparent), url('themes/apex/images/icons/clock-invert.png');
+}
+.oo-ui-icon-feedback {
+  background-image: url('themes/apex/images/icons/feedback-ltr.png');
+  background-image: -webkit-linear-gradient(transparent, transparent), /* @embed */ url('themes/apex/images/icons/feedback-ltr.svg');
+  background-image:         linear-gradient(transparent, transparent), /* @embed */ url('themes/apex/images/icons/feedback-ltr.svg');
+  background-image:      -o-linear-gradient(transparent, transparent), url('themes/apex/images/icons/feedback-ltr.png');
+}
+.oo-ui-icon-feedback-invert {
+  background-image: url('themes/apex/images/icons/feedback-ltr-invert.png');
+  background-image: -webkit-linear-gradient(transparent, transparent), /* @embed */ url('themes/apex/images/icons/feedback-ltr-invert.svg');
+  background-image:         linear-gradient(transparent, transparent), /* @embed */ url('themes/apex/images/icons/feedback-ltr-invert.svg');
+  background-image:      -o-linear-gradient(transparent, transparent), url('themes/apex/images/icons/feedback-ltr-invert.png');
 }
 .oo-ui-icon-funnel {
   background-image: url('themes/apex/images/icons/funnel-ltr.png');
@@ -175,6 +199,18 @@
   background-image: -webkit-linear-gradient(transparent, transparent), /* @embed */ url('themes/apex/images/icons/ribbonPrize-invert.svg');
   background-image:         linear-gradient(transparent, transparent), /* @embed */ url('themes/apex/images/icons/ribbonPrize-invert.svg');
   background-image:      -o-linear-gradient(transparent, transparent), url('themes/apex/images/icons/ribbonPrize-invert.png');
+}
+.oo-ui-icon-subtract {
+  background-image: url('themes/apex/images/icons/subtract.png');
+  background-image: -webkit-linear-gradient(transparent, transparent), /* @embed */ url('themes/apex/images/icons/subtract.svg');
+  background-image:         linear-gradient(transparent, transparent), /* @embed */ url('themes/apex/images/icons/subtract.svg');
+  background-image:      -o-linear-gradient(transparent, transparent), url('themes/apex/images/icons/subtract.png');
+}
+.oo-ui-icon-subtract-invert {
+  background-image: url('themes/apex/images/icons/subtract-invert.png');
+  background-image: -webkit-linear-gradient(transparent, transparent), /* @embed */ url('themes/apex/images/icons/subtract-invert.svg');
+  background-image:         linear-gradient(transparent, transparent), /* @embed */ url('themes/apex/images/icons/subtract-invert.svg');
+  background-image:      -o-linear-gradient(transparent, transparent), url('themes/apex/images/icons/subtract-invert.png');
 }
 .oo-ui-icon-sun {
   background-image: url('themes/apex/images/icons/sun-ltr.png');

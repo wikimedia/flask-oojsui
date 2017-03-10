@@ -1,12 +1,12 @@
 /*!
- * OOjs UI v0.18.0
+ * OOjs UI v0.19.5
  * https://www.mediawiki.org/wiki/OOjs_UI
  *
- * Copyright 2011–2016 OOjs UI Team and other contributors.
+ * Copyright 2011–2017 OOjs UI Team and other contributors.
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2016-11-22T10:18:07Z
+ * Date: 2017-03-07T22:57:06Z
  */
 .oo-ui-draggableElement-handle,
 .oo-ui-draggableElement-handle.oo-ui-widget {
@@ -33,7 +33,7 @@
   display: inline-block;
 }
 .oo-ui-bookletLayout-stackLayout.oo-ui-stackLayout-continuous > .oo-ui-panelLayout-scrollable {
-  overflow-y: hidden;
+  overflow: hidden;
 }
 .oo-ui-bookletLayout-stackLayout > .oo-ui-panelLayout {
   width: 100%;
@@ -41,19 +41,13 @@
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
-.oo-ui-bookletLayout-stackLayout > .oo-ui-panelLayout-scrollable {
-  overflow-y: auto;
-}
-.oo-ui-bookletLayout-stackLayout > .oo-ui-panelLayout-padded {
-  padding: 2em;
-}
 .oo-ui-bookletLayout-outlinePanel-editable > .oo-ui-outlineSelectWidget {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 3em;
-  overflow-y: auto;
+  overflow: auto;
 }
 .oo-ui-bookletLayout-outlinePanel > .oo-ui-outlineControlsWidget {
   position: absolute;
@@ -85,8 +79,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  /* stylelint-disable declaration-no-important */
-  /* stylelint-enable declaration-no-important */
 }
 .oo-ui-menuLayout-menu,
 .oo-ui-menuLayout-content {
@@ -220,8 +212,6 @@
      -moz-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-transform: translateZ(0);
-     -moz-transform: translateZ(0);
-      -ms-transform: translateZ(0);
           transform: translateZ(0);
   height: 2em;
   width: 4em;
@@ -355,6 +345,8 @@
 .oo-ui-selectFileWidget-info > .oo-ui-indicatorElement-indicator,
 .oo-ui-selectFileWidget-info > .oo-ui-iconElement-icon {
   position: absolute;
+  top: 0;
+  height: 100%;
 }
 .oo-ui-widget-disabled .oo-ui-selectFileWidget-info {
   cursor: default;
@@ -485,15 +477,11 @@
   border-width: 1px 0 1px 1px;
 }
 .oo-ui-selectFileWidget-info > .oo-ui-iconElement-icon {
-  top: 0;
   left: 0;
-  height: 2.3em;
   margin-left: 0.3em;
 }
 .oo-ui-selectFileWidget-info > .oo-ui-indicatorElement-indicator {
-  top: 0;
   right: 0;
-  height: 2.3em;
   margin-right: 0.775em;
 }
 .oo-ui-selectFileWidget-label {
@@ -601,36 +589,30 @@
 .oo-ui-outlineOptionWidget.oo-ui-indicatorElement .oo-ui-indicatorElement-indicator {
   opacity: 0.5;
 }
-.oo-ui-outlineOptionWidget-level-0 {
-  padding-left: 3.5em;
-}
-.oo-ui-outlineOptionWidget-level-0 .oo-ui-iconElement-icon {
-  left: 1em;
+.oo-ui-outlineOptionWidget-level-0.oo-ui-iconElement {
+  padding-left: 2.5em;
 }
 .oo-ui-outlineOptionWidget-level-1 {
-  padding-left: 5em;
+  padding-left: 2.5em;
 }
-.oo-ui-outlineOptionWidget-level-1 .oo-ui-iconElement-icon {
+.oo-ui-outlineOptionWidget-level-1.oo-ui-iconElement {
+  padding-left: 4.5em;
+}
+.oo-ui-outlineOptionWidget-level-1.oo-ui-iconElement .oo-ui-iconElement-icon {
   left: 2.5em;
 }
 .oo-ui-outlineOptionWidget-level-2 {
-  padding-left: 6.5em;
+  padding-left: 5em;
 }
-.oo-ui-outlineOptionWidget-level-2 .oo-ui-iconElement-icon {
-  left: 4em;
+.oo-ui-outlineOptionWidget-level-2.oo-ui-iconElement {
+  padding-left: 7em;
+}
+.oo-ui-outlineOptionWidget-level-2.oo-ui-iconElement .oo-ui-iconElement-icon {
+  left: 5em;
 }
 .oo-ui-selectWidget-depressed .oo-ui-outlineOptionWidget.oo-ui-optionWidget-selected {
   background-color: #a7dcff;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
-}
-.oo-ui-outlineOptionWidget.oo-ui-flaggedElement-important {
-  font-weight: bold;
-}
-.oo-ui-outlineOptionWidget.oo-ui-flaggedElement-empty .oo-ui-iconElement-icon {
-  opacity: 0.5;
-}
-.oo-ui-outlineOptionWidget.oo-ui-flaggedElement-empty .oo-ui-labelElement-label {
-  color: #777;
 }
 .oo-ui-outlineControlsWidget {
   height: 3em;
@@ -722,6 +704,12 @@
   display: block;
   position: relative;
 }
+.oo-ui-capsuleMultiselectWidget-handle > .oo-ui-iconElement-icon,
+.oo-ui-capsuleMultiselectWidget-handle > .oo-ui-indicatorElement-indicator {
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
 .oo-ui-capsuleMultiselectWidget-content {
   position: relative;
 }
@@ -730,6 +718,14 @@
 }
 .oo-ui-capsuleMultiselectWidget-group {
   display: inline;
+}
+.oo-ui-capsuleMultiselectWidget-popup > .oo-ui-popupWidget-popup > .oo-ui-popupWidget-body > * {
+  display: block;
+}
+.oo-ui-capsuleMultiselectWidget-focusTrap {
+  display: inline-block;
+  height: 1px;
+  width: 1px;
 }
 .oo-ui-capsuleMultiselectWidget-handle {
   background-color: #fff;
@@ -746,10 +742,6 @@
 .oo-ui-capsuleMultiselectWidget-handle:last-child {
   margin-right: 0;
 }
-.oo-ui-capsuleMultiselectWidget-handle > .oo-ui-indicatorElement-indicator,
-.oo-ui-capsuleMultiselectWidget-handle > .oo-ui-iconElement-icon {
-  position: absolute;
-}
 .oo-ui-capsuleMultiselectWidget-handle > .oo-ui-capsuleMultiselectWidget-content > input {
   border: 0;
   line-height: 1.675em;
@@ -762,24 +754,42 @@
   color: #000;
   vertical-align: middle;
 }
+.oo-ui-capsuleMultiselectWidget-handle > .oo-ui-capsuleMultiselectWidget-content > input::-webkit-input-placeholder {
+  color: #72777d;
+  opacity: 1;
+}
+.oo-ui-capsuleMultiselectWidget-handle > .oo-ui-capsuleMultiselectWidget-content > input:-ms-input-placeholder {
+  color: #72777d;
+  opacity: 1;
+}
+.oo-ui-capsuleMultiselectWidget-handle > .oo-ui-capsuleMultiselectWidget-content > input::-moz-placeholder {
+  color: #72777d;
+  opacity: 1;
+}
+.oo-ui-capsuleMultiselectWidget-handle > .oo-ui-capsuleMultiselectWidget-content > input:-moz-placeholder {
+  color: #72777d;
+  opacity: 1;
+}
+.oo-ui-capsuleMultiselectWidget-handle > .oo-ui-capsuleMultiselectWidget-content > input::placeholder {
+  color: #72777d;
+  opacity: 1;
+}
 .oo-ui-capsuleMultiselectWidget-handle > .oo-ui-capsuleMultiselectWidget-content > input:focus {
-  outline: none;
-}
-.oo-ui-capsuleMultiselectWidget.oo-ui-indicatorElement .oo-ui-capsuleMultiselectWidget-handle {
-  padding-right: 2.4875em;
-}
-.oo-ui-capsuleMultiselectWidget.oo-ui-indicatorElement .oo-ui-capsuleMultiselectWidget-handle > .oo-ui-indicatorElement-indicator {
-  right: 0;
-  top: 0;
-  margin: 0.775em;
+  outline: 0;
 }
 .oo-ui-capsuleMultiselectWidget.oo-ui-iconElement .oo-ui-capsuleMultiselectWidget-handle {
   padding-left: 2.475em;
 }
 .oo-ui-capsuleMultiselectWidget.oo-ui-iconElement .oo-ui-capsuleMultiselectWidget-handle > .oo-ui-iconElement-icon {
   left: 0;
-  top: 0;
-  margin: 0.3em;
+  margin: 0 0.3em;
+}
+.oo-ui-capsuleMultiselectWidget.oo-ui-indicatorElement .oo-ui-capsuleMultiselectWidget-handle {
+  padding-right: 2.4875em;
+}
+.oo-ui-capsuleMultiselectWidget.oo-ui-indicatorElement .oo-ui-capsuleMultiselectWidget-handle > .oo-ui-indicatorElement-indicator {
+  right: 0;
+  margin: 0 0.775em;
 }
 .oo-ui-capsuleMultiselectWidget:hover .oo-ui-capsuleMultiselectWidget-handle {
   border-color: rgba(0, 0, 0, 0.2);
@@ -794,6 +804,9 @@
 .oo-ui-capsuleMultiselectWidget.oo-ui-widget-disabled .oo-ui-capsuleMultiselectWidget-handle > .oo-ui-iconElement-icon,
 .oo-ui-capsuleMultiselectWidget.oo-ui-widget-disabled .oo-ui-capsuleMultiselectWidget-handle > .oo-ui-indicatorElement-indicator {
   opacity: 0.2;
+}
+.oo-ui-capsuleMultiselectWidget-popup > .oo-ui-popupWidget-popup {
+  border: 0;
 }
 .oo-ui-capsuleItemWidget {
   position: relative;
@@ -827,12 +840,13 @@
   cursor: text;
 }
 .oo-ui-capsuleItemWidget:focus {
-  outline: none;
+  outline: 0;
   border-color: #087ecc;
 }
 .oo-ui-capsuleItemWidget.oo-ui-widget-disabled {
   opacity: 0.5;
-  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
   box-shadow: none;
   color: #333;
   background: #eee;
@@ -880,11 +894,6 @@
 .oo-ui-numberInputWidget-buttoned .oo-ui-buttonWidget,
 .oo-ui-numberInputWidget-buttoned .oo-ui-textInputWidget {
   display: table-cell;
-}
-.oo-ui-numberInputWidget-buttoned .oo-ui-buttonElement-button {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
 }
 .oo-ui-numberInputWidget-field {
   display: table;
